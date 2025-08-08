@@ -10,6 +10,7 @@
             margin: 0;
             padding: 0;
             background-color: #87CEFA; /* Light Sky Blue */
+            position: relative;
         }
 
         header {
@@ -48,6 +49,15 @@
             color: #000;
             font-weight: bold;
         }
+
+        .hr-logo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            opacity: 0.3;
+            z-index: 10;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +75,9 @@
         <div class="file-item"><a href="files/salary-structure.pdf" target="_blank">Salary Structure</a></div>
         <div class="file-item"><a href="files/performance-review.pdf" target="_blank">Performance Review</a></div>
     </main>
+
+    <!-- Transparent HR logo -->
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="HR Logo" class="hr-logo">
 
     <script>
         const searchInput = document.getElementById("searchInput");
